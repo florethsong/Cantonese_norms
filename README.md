@@ -1,4 +1,4 @@
-# Cantonese_norms
+# Psycholinguistic investigation based on Cantonese character norms
 <!-- Copyright [19 Mar 2024] [florethsong]  
 
  Licensed under the Apache License, Version 2.0 (the "License");
