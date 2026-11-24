@@ -28,32 +28,42 @@ Liu, Y., Shu, H., & Li, P. (2007). Word naming and psycholinguistic norms: Chine
 
 
 ### :card_index_dividers: Description of file structure
+
 ```
-.
-│  
-├─code
-│      data.py # code for clearing and adjusting data format and content
-│      model.py # code for accessing API of target LLMs
-│      prompt.py # code for compiling different prompts
-│      statistics.py # code for computing statistical test
-│      visualization.py # code for visualizing the results data
-│      
-└─data
-    ├─norms
-    │      @merged.xlsx # curated test data merged from original Cantonese and Chinese norms
-    |    
-    └─results
-        ├─experiment1
-        │      combined.xlsx # results of multiple LLMs (i.e., GPT-4.1 mini, Llama-3-70B-Instruct, Mistral-Small-3.2-24B-Instruct, DeepSeek-V3, Qwen2.5-72B-Instruct) across different variables and prompt settings
-        │      
-        ├─experiment2
-        │      combined.xlsx results of Qwen2.5-7B-Instruct and CantoneseLLMChat-7B across different variables and prompt settings
-        │      
-        └─experiment_same+different
-                @TS_different.xlsx # characters with different scripts across Chinese varieties.
-                @TS_same.xlsx # characters with same scripts across Chinese varieties.
-                combined_different.xlsx # results of LLMs in experiments1 on the different dataset.
-                combined_same.xlsx # results of LLMs in experiments1 on the same dataset.
+    .
+    │  
+    ├─code
+    │      data.py # code for clearing and adjusting data format and content
+    │      model.py # code for accessing API of target LLMs
+    │      prompt.py # code for compiling different prompts
+    │      statistics.py # code for computing statistical test
+    │      visulization.py # code for visualizing the results data
+    │      
+    └─data
+        ├─norms
+        │  │  @merged.xlsx # curated test data merged from original Cantonese and Chinese norms
+        │  │  
+        │  └─finetune # train and test data for finetuning models
+        │          cantonese_test.xlsx
+        │          cantonese_train.xlsx
+        │          mandarin_test.xlsx
+        │          mandarin_train.xlsx
+        │          
+        └─results
+            ├─experiment1
+            │      combined.xlsx # results of multiple LLMs (i.e., GPT-4.1 mini, Llama-3-70B-Instruct, Mistral-Small-3.2-24B-Instruct, DeepSeek-V3, Qwen2.5-72B-Instruct) across different variables and prompt settings
+            │      
+            ├─experiment2
+            │      combined.xlsx # results of Qwen2.5-7B-Instruct and CantoneseLLMChat-7B across different variables and prompt settings
+            │      
+            ├─experiment2_finetune
+            │      combined_test.xlsx # (pending) results of finetuned Qwen2.5-7B-Instruct and CantoneseLLMChat-7B across different variables and prompt settings
+            │      
+            └─experiment_same+different
+                    @TS_different.xlsx # characters with different scripts across Chinese varieties.
+                    @TS_same.xlsx # characters with same scripts across Chinese varieties.
+                    combined_different.xlsx # results of LLMs in experiments1 on the different dataset.
+                    combined_same.xlsx # results of LLMs in experiments1 on the same dataset.
 ```
 
 ## Citation
