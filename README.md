@@ -41,7 +41,7 @@ Liu, Y., Shu, H., & Li, P. (2007). Word naming and psycholinguistic norms: Chine
 └─data
     ├─norms
     │      @merged.xlsx # curated test data merged from original Cantonese and Chinese norms
-    │      
+    |    
     └─results
         ├─experiment1
         │      combined.xlsx # results of multiple LLMs (i.e., GPT-4.1 mini, Llama-3-70B-Instruct, Mistral-Small-3.2-24B-Instruct, DeepSeek-V3, Qwen2.5-72B-Instruct) across different variables and prompt settings
